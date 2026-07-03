@@ -212,12 +212,12 @@ img {
 .logo-area {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
 }
 
 .brand-logo {
-    width: 44px;
-    height: 44px;
+    width: 58px;
+    height: 58px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid var(--color-primary);
@@ -232,20 +232,36 @@ img {
 
 .brand-name {
     font-family: var(--font-heading);
-    font-size: 1.4rem;
+    font-size: 1.75rem;
     font-weight: 600;
     color: var(--color-text-primary);
     display: flex;
     flex-direction: column;
     line-height: 1.1;
+    transition: var(--transition-smooth);
 }
 
 .brand-name .tagline {
     font-family: var(--font-body);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 400;
     color: var(--color-primary);
     letter-spacing: 0.1em;
+    transition: var(--transition-smooth);
+}
+
+/* Header Scrolled Size Adjustments */
+.site-header.scrolled .brand-logo {
+    width: 46px;
+    height: 46px;
+}
+
+.site-header.scrolled .brand-name {
+    font-size: 1.45rem;
+}
+
+.site-header.scrolled .brand-name .tagline {
+    font-size: 0.75rem;
 }
 
 .nav-menu {
