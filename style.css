@@ -64,7 +64,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../logo/sdc2.jpeg'); /* Repeating sdc2 watermark */
+    background-image: url('sdc2.jpeg'); /* Repeating sdc2 watermark */
     background-repeat: repeat;
     background-position: center center;
     background-size: 220px 220px; /* Larger, fewer watermark icons */
